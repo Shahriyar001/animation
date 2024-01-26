@@ -1,9 +1,42 @@
-.main {
+
+.btn{
+  border: 2px solid tomato;
+  color: tomato;
+  padding: 10px 20px;
+  background-color: transparent;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+  position: relative;
+}
+
+.btn::after{
+  content: '';
+  height: 100%;
+  width: 100%;
+  background-color: tomato;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(150px);
+}
+
+.btn:hover{
+  transform: scale(1.1);
+}
+
+
+/* .main {
   border: 2px solid black;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  overflow: hidden;
+  align-items: center;
+  perspective: 200px;
+  /* overflow: hidden; */
   /* position: relative;  */
+}
+.box-container-2 {
+  overflow: hidden;
 }
 
 .box-1 {
@@ -13,8 +46,9 @@
   width: 150px;
   transition-duration: 500ms;
   transition-timing-function: ease;
+  margin: 10px;
 }
 
 .box-1:hover {
-  transform: scale(1.2);
-}
+  transform: translateZ(100px);
+} */
