@@ -1,15 +1,9 @@
+import Lesson1 from "./pages/lesson1";
+
 function App() {
   return (
-    <div className="main">
-      <div className="loading">
-        <div className="glass"></div>
-
-        <div className="box"></div>
-      </div>
-      {/* <div className="box-container-2">
-        <div className="box-2"></div>
-      </div> */}
-      {/* <button className="btn">Hover me</button> */}
+    <div className="flex h-screen justify-center items-center">
+      <Lesson1 />
     </div>
   );
 }
